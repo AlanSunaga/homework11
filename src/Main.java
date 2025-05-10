@@ -3,7 +3,6 @@
 public class Main {
     public static void main(String[] args) {
         Author author1 = new Author("Андрей", "Платонов ");
-
         Author author2 = new Author("Антон", "Чехов");
 
         Book book1 = new Book("Маленький солдат", author1, 1943);

@@ -1,31 +1,32 @@
 public class Book {
-    private String NameBook;
-    private Author Author;
-    private int YearPub;
+    private String nameBook;
+    private Author author;
+    private int yearPub;
 
-    public Book(String NameBook, Author Author, int YearPub) {
-        this.NameBook = NameBook;
-        this.Author = Author;
-        this.YearPub = YearPub;
+    public Book(String nameBook, Author author, int yearPub) {
+        this.nameBook = nameBook;
+        this.author = author;
+        this.yearPub = yearPub;
     }
 
     public String getNameBook() {
-        return NameBook;
+        return nameBook;
     }
 
     public Author getAuthor() {
-        return Author;
+        return author;
     }
 
     public int getYearPub() {
-        return YearPub;
+        return yearPub;
     }
 
     public void setYearPub(int yearPub) {
-        YearPub = yearPub;
+        this.yearPub = yearPub;
     }
 
+    @Override
     public String toString() {
-        return "Название книги: " + NameBook + "\n" + "Автор: " + Author + "\n" + "Год публикации: " + YearPub;
+        return "Название книги: " + nameBook + "\n" + "Автор: " + author + "\n" + "Год публикации: " + yearPub;
     }
 }
